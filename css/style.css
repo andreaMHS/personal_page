@@ -1,3 +1,12 @@
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, 
+    Verdana, sans-serif;
+  }
+
+  li {
+    list-style-type: none;
+  }
+  
   /*********** NAV **************/
 .nav-menu > ul {
   list-style-type: none;
@@ -5,31 +14,30 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  padding:0;
+  }
+
+  .nav-menu li:not(:last-child) {
+  margin-right: 20px;
   }
 
 .nav-menu a {
-position: relative;
-color: #2f4d5a;
-padding: 20px 15px;
-transition: 0.3s;
-font-size: 13px;
-font-family: "Poppins", sans-serif;
-text-transform: uppercase;
-font-weight: 500;
-text-decoration: none;
-background-color: transparent;
+  position: relative;
+  color: #2f4d5a;
+  padding: 20px 15px;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  }
+
+.nav-menu a:hover{
+  color: #048998;
 }
 
   /*********** HOME **************/
-#hero .foto_home {
-  width: 400px;
-  height: 400px; 
-  border-radius: 100%;
-  display: flex;
-  margin:auto;
-  }
-
-#hero .hero-container {
+  #hero .hero-container {
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, 
   Verdana, sans-serif;
@@ -42,16 +50,81 @@ background-color: transparent;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  justify-content: flex-end
+  }
+  
+  #hero .home {
+  display: flex;
+  /*transition:all 2s ease-in-out;*/
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   }
 
-  /*********** CONTACTA **************/
-.main-contacto {
+  .foto_home {
+  width: 400px;
+  height: 400px; 
+  border-radius: 100%;
+  margin: 40px;
+  }
+  
+  .caja1 {
+    position: relative;
+  }
+
+  .caja1 article h2 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.76);
+  }
+
+  .foto_home:hover {
+  filter: opacity(.5);
+  }
+
+  /*********** SOBRE MI ***************/
+.main-about {
   background: url("../img/escritorio.jpg") center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 60px 0;
+  position: relative;
+}
+
+/*SKILLS*/
+* {box-sizing: border-box}
+
+.container {
+  width: 30%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+
+/*//*********** CONTACTA **************/
+.main-contacto {
+  background: url("../img/escritorio.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 30px 0;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -65,11 +138,10 @@ background-color: transparent;
 
 .mis_datos {
   padding: 30px;
-  border: 1px solid #CCC;
   border-radius: 1em;
-  width: 300px;
+  width: 350px;
   margin: 20px 20px 20px 80px;
-  background-color: rgba(255, 255, 255, 0.89)
+  background-color: #e7e4e494;
 }  
 
 .mis_datos>img {
@@ -77,12 +149,20 @@ background-color: transparent;
   border-radius: 100%;
   display: flex;
   margin:auto;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
   }
 
+  .mis_datos>ul {
+  list-style-type: none;
+  }
 
 .mis_datos>ul>li>img {
   /* Vectores tamaño y alineacion texto*/
-  width: 30px;
+  width: 20px;
+}
+
+.mis_datos>ul>li{
+  margin: 20px;
 }
 
 .form-contacto {
@@ -108,17 +188,21 @@ form {
   width: 500px;
   /* Esquema del formulario bordes */
   padding: 1em;
-  border: 1px solid #CCC;
   border-radius: 1em;
 }
 
-/*********** SOBRE MI ***************/
-.main-about {
-  background: url("../img/escritorio.jpg") center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 60px 0;
-  position: relative;
+/**************** Footer ***********************/
+
+.social img {
+  width: 35px;
+  margin: 5px;
 }
 
+.logo-social:hover {
+  filter: opacity(.5);
+  }
+
+.social ul  {
+    justify-content: center;
+    display: flex;
+}
