@@ -17,7 +17,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 40px 15px;
-
   }
 
 .nav-menu a {
@@ -38,7 +37,19 @@
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
-  #hero .hero-container {
+#home {
+  background: url("../img/escritorio.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 30px 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-container {
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, 
   Verdana, sans-serif;
@@ -53,7 +64,7 @@
   text-align: center;
   }
   
-  #hero .home {
+.home {
   display: flex;
   padding: 60px;
   justify-content: center;
@@ -123,10 +134,72 @@
 .php {width: 60%; background-color: #808080;}
 
 /*--------------------------------------------------------------
-# Contacta
+# Negocio
+--------------------------------------------------------------*/
+.negocio h1,
+.diseño h1 {
+  text-align: center;
+  width: 80%;
+  padding: 20px;
+  font-size: 23px;
+  border-radius: 50px;
+  margin: 40px;
+}
+
+.negocio h1 {
+  background-color: #9DE0AD;
+}
+
+.ux{
+  background-color: #9dc7e0
+}
+
+.ui {
+  background-color: #e09dca
+}
+
+.negocio h2,
+.diseño h2 {
+font-size: 100%;
+  }
+
+.img_negocio{
+  width: 35px;
+}
+
+.servicios_negocio:hover,
+.servicios_diseño:hover {
+  background-color: #cfcfcfb9;
+}
+
+ .servicios ul li {
+  width: 100px;
+  text-align: center;
+  line-height: 75px;
+}
+
+.servicios_negocio,
+.servicios_diseño {
+  margin: 20px;
+  padding: 20px;
+  background-color: #e7e4e494;
+  border-radius: 6%;
+  width: 25%;
+  /*transition: 1s;*/
+}
+
+.servicios {
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+/*--------------------------------------------------------------
+# Contacta  - Footer
 --------------------------------------------------------------*/
 .main-contacto {
-  background: url("../img/escritorio.jpg") center center;
+  background: url("../img/fondohome2.jpg") center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -147,7 +220,7 @@
   border-radius: 1em;
   width: 350px;
   margin: 20px 20px 20px 80px;
-  background-color: #e7e4e494;
+  background-color: #f3f3f39f;
 }  
 
 .mis_datos>img {
@@ -196,9 +269,8 @@ form {
   padding: 1em;
   border-radius: 1em;
 }
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+
+ /* Redes sociales */
 .social img {
   width: 35px;
   margin: 5px;
@@ -211,64 +283,4 @@ form {
 .social ul  {
     justify-content: center;
     display: flex;
-}
-/*--------------------------------------------------------------
-# Negocio
---------------------------------------------------------------*/
-.negocio h1,
-.diseño h1 {
-  text-align: center;
-  width: 80%;
-  padding: 20px;
-  font-size: 23px;
-  border-radius: 50px;
-}
-
-.negocio h1 {
-  background-color: #9DE0AD;
-}
-
-.ux{
-  background-color: #9dc7e0
-}
-
-.ui {
-  background-color: #e09dca
-}
-
-.negocio h2,
-.diseño h2 {
-font-size: 100%;
-  }
-
-.img_negocio {
-  width: 30px;
-}
-
-.servicios_negocio:hover,
-.servicios_diseño:hover {
-  background-color: #cfcfcfb9;
-}
-
- .servicios ul li {
-  width: 100px;
-  text-align: center;
-  line-height: 75px;
-}
-
-.servicios_negocio,
-.servicios_diseño {
-  margin: 20px;
-  padding: 20px;
-  background-color: #e7e4e494;
-  border-radius: 6%;
-  width: 25%;
-  transition: 1s;
-}
-
-.servicios {
-display: flex;
-justify-content: center;
-flex-direction: row;
-flex-wrap: wrap;
 }
