@@ -22,7 +22,7 @@
   padding:0;
   }
 
-  .nav-menu li:not(:last-child) {
+.nav-menu li:not(:last-child) {
   margin-right: 20px;
   }
 
@@ -108,7 +108,7 @@
 }
 
 /*SKILLS*/
-* {box-sizing: border-box}
+
 
 .container {
   width: 30%;
@@ -221,7 +221,7 @@ form {
 /*--------------------------------------------------------------
 # Negocio
 --------------------------------------------------------------*/
-.h1negocio {
+.negocio h1 {
   text-align: center;
   margin: 50px;
   font-size: 25px;
@@ -231,7 +231,6 @@ form {
   width: 30px;
   display:block;
   margin:auto;
-
 }
 
 .servios_negocio p, h2 {
@@ -256,6 +255,3 @@ flex-direction: row;
 flex-wrap: wrap;
 }
 
-.titulo_negocio {
-  padding: 0px 20px 0px 20px;
-}
