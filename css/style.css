@@ -6,41 +6,35 @@
   li {
     list-style-type: none;
   }
-  
-  body {
-    margin: 0%;
-  }
+
 /*--------------------------------------------------------------
 # Navegador
 --------------------------------------------------------------*/
+
 .nav-menu > ul {
-  list-style-type: none;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding:0;
-  }
+  margin: 40px 15px;
 
-.nav-menu li:not(:last-child) {
-  margin-right: 20px;
   }
 
 .nav-menu a {
   position: relative;
   color: #2f4d5a;
-  padding: 20px 15px;
+  padding:20px 15px;
   font-size: 13px;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   background-color: transparent;
   }
+      
 
 .nav-menu a:hover{
-  color: #048998;
+  color: #295a35;
 }
-
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
@@ -61,13 +55,13 @@
   
   #hero .home {
   display: flex;
-  /*transition:all 2s ease-in-out;*/
   padding: 60px;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: row;
   flex-wrap: wrap;
+  
   }
 
   .foto_home {
@@ -83,11 +77,12 @@
 
   .caja1 article h2 {
   position: absolute;
+  border-radius: 10%;
   top: 200px;
   left: 0;
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 15px;
   background-color: rgba(255, 255, 255, 0.76);
   }
 
@@ -201,7 +196,6 @@ form {
   padding: 1em;
   border-radius: 1em;
 }
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -221,37 +215,60 @@ form {
 /*--------------------------------------------------------------
 # Negocio
 --------------------------------------------------------------*/
-.negocio h1 {
+.negocio h1,
+.diseño h1 {
   text-align: center;
-  margin: 50px;
-  font-size: 25px;
+  width: 80%;
+  padding: 20px;
+  font-size: 23px;
+  border-radius: 50px;
 }
+
+.negocio h1 {
+  background-color: #9DE0AD;
+}
+
+.ux{
+  background-color: #9dc7e0
+}
+
+.ui {
+  background-color: #e09dca
+}
+
+.negocio h2,
+.diseño h2 {
+font-size: 100%;
+  }
 
 .img_negocio {
   width: 30px;
-  display:block;
-  margin:auto;
 }
 
-.servios_negocio p, h2 {
-  width: 100%;
-  margin: 10px;
+.servicios_negocio:hover,
+.servicios_diseño:hover {
+  background-color: #cfcfcfb9;
 }
 
-.servios_negocio:hover {
-  color: #048998;
+ .servicios ul li {
+  width: 100px;
+  text-align: center;
+  line-height: 75px;
 }
 
-.servios_negocio {
-background-color: #e3e3e3a9;
-border-radius: 4%;
-/*transition:all 2s ease-in-out;*/
-padding: 10px;
-margin: 15px 0px 15px 0px;
-align-items: center;
-text-align: center;
+.servicios_negocio,
+.servicios_diseño {
+  margin: 20px;
+  padding: 20px;
+  background-color: #e7e4e494;
+  border-radius: 6%;
+  width: 25%;
+  transition: 1s;
+}
+
+.servicios {
 display: flex;
+justify-content: center;
 flex-direction: row;
 flex-wrap: wrap;
 }
-
