@@ -7,7 +7,12 @@
     list-style-type: none;
   }
   
-  /*********** NAV **************/
+  body {
+    margin: 0%;
+  }
+/*--------------------------------------------------------------
+# Navegador
+--------------------------------------------------------------*/
 .nav-menu > ul {
   list-style-type: none;
   display: flex;
@@ -36,7 +41,9 @@
   color: #048998;
 }
 
-  /*********** HOME **************/
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
   #hero .hero-container {
   position: relative;
   font-family: 'Segoe UI', Tahoma, Geneva, 
@@ -88,7 +95,9 @@
   filter: opacity(.5);
   }
 
-  /*********** SOBRE MI ***************/
+/*--------------------------------------------------------------
+# Sobre mi
+--------------------------------------------------------------*/
 .main-about {
   background: url("../img/escritorio.jpg") center center;
   background-size: cover;
@@ -118,7 +127,9 @@
 .js {width: 65%; background-color: #f44336;}
 .php {width: 60%; background-color: #808080;}
 
-/*//*********** CONTACTA **************/
+/*--------------------------------------------------------------
+# Contacta
+--------------------------------------------------------------*/
 .main-contacto {
   background: url("../img/escritorio.jpg") center center;
   background-size: cover;
@@ -191,8 +202,9 @@ form {
   border-radius: 1em;
 }
 
-/**************** Footer ***********************/
-
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .social img {
   width: 35px;
   margin: 5px;
@@ -205,4 +217,45 @@ form {
 .social ul  {
     justify-content: center;
     display: flex;
+}
+/*--------------------------------------------------------------
+# Negocio
+--------------------------------------------------------------*/
+.h1negocio {
+  text-align: center;
+  margin: 50px;
+  font-size: 25px;
+}
+
+.img_negocio {
+  width: 30px;
+  display:block;
+  margin:auto;
+
+}
+
+.servios_negocio p, h2 {
+  width: 100%;
+  margin: 10px;
+}
+
+.servios_negocio:hover {
+  color: #048998;
+}
+
+.servios_negocio {
+background-color: #e3e3e3a9;
+border-radius: 4%;
+/*transition:all 2s ease-in-out;*/
+padding: 10px;
+margin: 15px 0px 15px 0px;
+align-items: center;
+text-align: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.titulo_negocio {
+  padding: 0px 20px 0px 20px;
 }
