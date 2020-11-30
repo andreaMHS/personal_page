@@ -7,6 +7,8 @@
     <title>Andrea MHS</title>
 
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,41 +16,43 @@
     <header>
         <nav class="nav-menu">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="iconhome"><a href="#homenav"><span>Home</span> <img src="./img/iconhome.png" alt=""></a></li>
                 <li><a href=#negocio>Negocio</a></li>
-                <li><a href=#diseño>Diseño UX/UI</a></li>
-                <li><a href="./about.html">Sobre mi</a></li>
-                <li><a href="#sobremi">Contacta conmigo</a></li>
+                <li><a href=#diseñoux>Diseño UX</a></li>
+                <li><a href=#diseñoui>Diseño UI</a></li>
+                <li><a href="#sobremi">Contáctame</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="home">
+    <main id="homenav">
         <section>
-            <article class="hero-container">
-                <h1>¡Hola!</h1>
+            <article class="home">
+                <h2>¡Hola!</h2>
             </article>
 
-            <article class="home">
+            <article  class="home">
                 <section class="caja1">
                     <a href=#negocio><img src="./img/negocio.jpg"
-                            alt="Negocio" class="foto_home"></a>
-                    <article>
+                        alt="Negocio" class="foto_home"></a>
                         <h2>NEGOCIO</h2>
-                    </article>
                 </section>
 
                 <section class="caja1">
-                    <a href=#diseño><img src="./img/ux.img"
-                        alt="Negocio" class="foto_home"></a>
-                    <article>
-                        <h2>DISEÑO UX/UI</h2>
-                    </article>
+                    <a href=#diseñoux><img src="./img/ux.jpg"
+                        alt="Ux" class="foto_home"></a>
+                        <h2>RESEARCH Y DISEÑO UX</h2>
+                </section>
+
+                <section class="caja1">
+                    <a href=#diseñoui><img src="./img/ui.jpg"
+                        alt="Ui" class="foto_home"></a>
+                        <h2>DISEÑO UI</h2>
                 </section>
             </article>
         </section>
     </main>
-
+ 
         <!-- Start section negocio -->
     <main  id="negocio" class="negocio">
         <section>
@@ -95,9 +99,9 @@
     </main>
 
     <!-- Start section diseño -->
-    <main id="diseño" class=diseño>
+    <main id="diseñoux" class=diseño>
         <section>
-            <h1 class="ux">Ventajas del diseño UX o User Experience</h1>
+            <h1 class="ux">Ventajas del Research y Diseño UX o Experiencia de usuario</h1>
             <p>Es la forma en la que los usuarios interactúan con un producto o servicio o de otra manera explicado del cómo y para qué un usuario utiliza un objeto o interactúa con una web o una app. Por lo que lo más importante en esta parte es el conocimiento de los usuarios, sus necesidades y cómo satisfacerlas de modo simple y claro.</p>
 
             <article>
@@ -130,7 +134,7 @@
                 </ul>
             </article>
         </section>
-
+    <main id="diseñoui" class=diseño>
         <section>
             <h1 class="ui">Ventajas del diseño UI o User Interface</h1>
             <p>UI se centra en la parte visual. Si el UX se encarga de que un producto sea útil para los usuarios, el UI lo hace atractivo y visual. Los colores, la tipografía, las imágenes son algunos de los elementos con los que trabaja el diseñador UI para hacer que un producto sea atractivo.</p>
@@ -162,6 +166,7 @@
                 </ul>
             </article>
         </section>
+    </main>
     </main>     <!-- End section diseño -->
 
     <!-- Start section Sobre mi -->
@@ -257,9 +262,6 @@
         </form>
     </section>
 </footer>
-
-
-
 
 
 </body>
