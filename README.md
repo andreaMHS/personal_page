@@ -1,9 +1,9 @@
 # personal_page
-FALLOS:
--html Negocio: 
-padding-inline-start: 40px;
+FALLOS: 
+-html Negocio: (OK)
+padding-inline-start: 40px; (OK)
 
 FALTA:
--NaVBar fijo 
--Centrar 2 imagenes hombre con texto 
--Completar sobre mi
+-NaVBar fijo  (OK)
+-Centrar 2 imagenes hombre con texto (OK)
+-Completar sobre mi (OK)
